@@ -1,0 +1,135 @@
+/*Main index*/
+* {
+color:
+#ffffff
+#4c4c4c
+#000000
+#9dc307
+#0d4a65
+
+Fruit Salad
+#fed601
+#f67c8a
+
+Refreshers
+#084cc2
+#fc1182
+#1cdd50
+#fdf002
+
+Blackjack
+#fd3321
+#a5b9c2
+#ffffff
+#4c4c4c
+#000000
+}
+/*This is the reset block.*/
+html { 
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+/*Reset block ends here*/
+h1 {
+  color: white;
+  text-align:center;
+  margin:15px;
+}
+#mainquote {
+    background-color:#196281;
+    border-radius: 8px;
+    color:white;
+    font-size: 32px;
+    width: 70%;
+}
+figcaption {
+  color:white;
+  font-size: 40px;
+  text-align:right;
+}
+#hero-image {
+  background-image: url("amit-lahav-LU_fCezP9-o-unsplash.jpg");
+  background-size:cover;
+  border-radius: 10px;
+  height: 400px;
+  width:100%;
+  margin:auto;
+  margin-top: 30px;
+}
+#menubar {
+  display:flex;
+}
+.menubar {
+  flex: 1 1 0;
+  background-color:#9dc307;
+  height: 50px;
+  border-radius: 15px;
+  padding-bottom:5px;
+  padding-top:5px;
+  display:flex;
+}
+a {
+  margin:auto;
+  color:black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight:bold;
+}
+a:hover {
+  color:white;
+}
+.thumb {
+  height: 200px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 50px;
+  margin: auto;
+}
+#candiesimg {
+  margin:auto;
+}
+#candies {
+display:flex;
+margin-top: 20px;
+margin:auto;
+color:white;
+font-size: 22px;
+padding: 10px;
+justify-content: space-evenly;
+}
+.candiesdiv {
+  margin: 30px;
+  max-width: 400px;
+}
+.candiesimg {
+  text-align: center;
+}
+.candiesdesc {
+  text-align:center;
+}
+footer {
+  background-color:#4c4c4c;
+  color: white;
+  height: 200px;
+}
