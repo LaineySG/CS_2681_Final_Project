@@ -1,6 +1,10 @@
 <!--TO DO:
 Add dl to the sites as an example
-
+Add incline static images to other page <img>
+Index: Flex
+Blackjacks: grid
+fruit salad: float
+refreshers: positioning
 -->
 
 <!DOCTYPE html>
@@ -24,7 +28,7 @@ Add dl to the sites as an example
     <div id = "hero-image"></div>
     <div id = "candies">
         <div class="candiesdiv">
-            <div class="candiesimg"><a href="fruitsalad.html"><img class = "thumb" src="grooveland-designs-72LS08iZQZI-unsplash.jpg"></a></div>
+            <div class="candiesimg"><a href="fruitsalad.html"><img div = "ex5" class = "thumb" src="grooveland-designs-72LS08iZQZI-unsplash.jpg"></a></div>
             <div class="candiesdesc">Mauris vitae vestibulum metus. Nulla vestibulum nisi a augue cursus, id laoreet lorem scelerisque.</div>
         </div>
         <div class="candiesdiv">
@@ -39,11 +43,27 @@ Add dl to the sites as an example
 
     <figure>
         <blockquote id="mainquote">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae vestibulum metus. Nulla vestibulum nisi a augue cursus, id laoreet lorem scelerisque. Aliquam in sodales sem. Nullam id cursus eros.</p>
+            <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae vestibulum metus. Nulla vestibulum nisi a augue cursus, id laoreet lorem scelerisque. Aliquam in sodales sem. Nullam id cursus eros.&rdquo;</p>
         </blockquote>
         <figcaption>—A Satisfied Customer</figcaption>
     </figure>
-    <!--CONTACT US FORM HERE-->
+
+    <form action="contact_us.php"> <!--Doesnt exist as we haven't covered PHP yet.-->
+        <fieldset>
+            <legend><b>Contact us!</b></legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Enter First Name"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Enter Last Name"><br><br>
+        <input type="radio" name="radiooptions" value="Yes" id="yes">
+        <label for="yes">I have purchased a Barratt's product before.</label><br>
+        <input type="radio" name="radiooptions" value="No" id="no">
+        <label for="no">I have not purchased a Barratt's product before.</label><br>
+        <textarea>Enter the content of your message here!</textarea><br>
+        <input type="submit" value="Submit">
+    </fieldset>
+      </form> 
+
 <footer><ul id="ex3"><li>1234 Lane Road Avenue,</li>
 <li>AB Canada, A1B2C3</li>
 <li>Add phone # here</li>
