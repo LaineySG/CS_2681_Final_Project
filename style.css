@@ -241,6 +241,14 @@ textarea {
   height: 250px;
   margin-top: 15px;
 }
+
+.blackjack > div > a {
+color:white;
+}
+.blackjack > div > a:hover {
+  color:red;
+  }
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
   .positioning-container #ele2 {
