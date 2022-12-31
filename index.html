@@ -5,11 +5,13 @@ Index: Flex
 Blackjacks: grid
 fruit salad: float
 refreshers: positioning
+
+make sure to include JS, form validation, references page, stylesheets for responsive pages
 -->
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head id ="ex6">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,27 +19,27 @@ refreshers: positioning
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color:#0d4a65">
-    <h1>Baratt's Home Page</h1>
+    <h1 id="titleheader">Baratt's Home Page</h1>
     <nav id = "menubar">
         <div class="menubar" id="ex1"><a href="#">Home</a></div>
         <div class="menubar"><a href="refreshers.html">Refreshers</a></div>
         <div class="menubar"><a href="blackjacks.html">Black Jacks</a></div>
-        <div class="menubar"><a href="fruitsalad.html">Fruit Salad</a></div>
-        <div class="menubar"><a href="crossref.html">Cross-Reference</a></div>
+        <div class="menubar"><a id="ex10"href="fruitsalad.html">Fruit Salad</a></div>
+        <div class="menubar"><a id="crossrefmenu" href="crossref.html">Cross-Reference</a></div>
     </nav>
     <div id = "hero-image"></div>
     <div id = "candies">
         <div class="candiesdiv">
             <div class="candiesimg"><a href="fruitsalad.html"><img div = "ex5" class = "thumb" src="grooveland-designs-72LS08iZQZI-unsplash.jpg"></a></div>
-            <div class="candiesdesc">Mauris vitae vestibulum metus. Nulla vestibulum nisi a augue cursus, id laoreet lorem scelerisque.</div>
+            <div class="candiesdesc"><span class="dropcap" id="dropcap1">M</span>auris vitae vestibulum metus. Nulla vestibulum nisi a augue cursus, id laoreet lorem scelerisque.</div>
         </div>
         <div class="candiesdiv">
             <div class="candiesimg"><a href="blackjacks.html"><img class = "thumb" src="massimo-adami-Rl2atd5MdkE-unsplash.jpg"></a></div>
-            <div class="candiesdesc">Mauris vitae vestibulum metus. Nulla vestibulum nisi a augue cursus, id laoreet lorem scelerisque.</div>
+            <div class="candiesdesc"><span class="dropcap">M</span>auris vitae vestibulum metus. Nulla vestibulum nisi a augue cursus, id laoreet lorem scelerisque.</div>
         </div>
         <div class="candiesdiv">
             <div class="candiesimg"><a href="refreshers.html"><img class = "thumb" src="bruna-branco-7r1HxvVC7AY-unsplash.jpg"></a></div>
-            <div class="candiesdesc">Mauris vitae vestibulum metus. Nulla vestibulum nisi a augue cursus, id laoreet lorem scelerisque.</div>
+            <div class="candiesdesc"><span class="dropcap">M</span>auris vitae vestibulum metus. Nulla vestibulum nisi a augue cursus, id laoreet lorem scelerisque.</div>
         </div>
     </div>
 
@@ -48,26 +50,26 @@ refreshers: positioning
         <figcaption>—A Satisfied Customer</figcaption>
     </figure>
 
-    <form action="contact_us.php"> <!--Doesnt exist as we haven't covered PHP yet.-->
+    <form action="contact_us.php" id="contactusform"> <!--Doesnt exist as we haven't covered PHP yet.-->
         <fieldset>
             <legend><b>Contact us!</b></legend>
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname" value="Enter First Name"><br>
-        <label for="lname">Last name:</label><br>
+        <label for="lname" id="ex8">Last name:</label><br>
         <input type="text" id="lname" name="lname" value="Enter Last Name"><br><br>
         <input type="radio" name="radiooptions" value="Yes" id="yes">
-        <label for="yes">I have purchased a Barratt's product before.</label><br>
+        <label for="yes" id="ex9span">I have purchased a Barratt's product before.</label><br>
         <input type="radio" name="radiooptions" value="No" id="no">
         <label for="no">I have not purchased a Barratt's product before.</label><br>
         <textarea>Enter the content of your message here!</textarea><br>
-        <input type="submit" value="Submit">
+        <input id = "submitbutton" type="submit" value="Submit">
     </fieldset>
       </form> 
 
-<footer><ul id="ex3"><li>1234 Lane Road Avenue,</li>
+<footer><ul id="ex3"><li id="firstoftypeex">1234 Lane Road Avenue,</li>
 <li>AB Canada, A1B2C3</li>
 <li>Add phone # here</li>
-<li>Add Contact us button</li></ul><p>Website was last edited 12/25/22</p></footer>
+<li>Add Contact us button</li></ul><p id="ex7">Website was last edited 12/25/22</p></footer>
 
 </body>
 </html>

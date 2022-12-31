@@ -24,24 +24,10 @@ Blackjack
 #4c4c4c
 #000000
 }
-/*This is the reset block.*/
-html { 
+
+* { 
     box-sizing: border-box;
     font-size: 16px;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-  }
-  
-  ol, ul {
-    list-style: none;
   }
   
   img {
@@ -49,8 +35,13 @@ html {
     height: auto;
   }
 
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
 
-/*Reset block ends here*/
 h1 {
   color: white;
   text-align:center;
@@ -73,6 +64,8 @@ figcaption {
 #hero-image {
   background-image: url("amit-lahav-LU_fCezP9-o-unsplash.jpg");
   background-size:cover;
+  background-clip:border-box;
+  background-origin:padding-box;
   border-radius: 10px;
   height: 400px;
   width:100%;
@@ -86,10 +79,12 @@ figcaption {
   flex: 1 1 0;
   background-color:#9dc307;
   height: 50px;
+  margin: 1px;
   border-radius: 15px;
   padding-bottom:5px;
   padding-top:5px;
   display:flex;
+  border: 2px double black;
 }
 a {
   margin:auto;
@@ -101,6 +96,22 @@ a {
 a:hover {
   color:white;
 }
+#crossrefmenu:visited {
+  color:#254250;
+}
+#crossrefmenu:active {
+  color:#fd3321;
+}
+#crossrefmenu:focus {
+  color:#f67c8a;
+}
+nav > div:last-of-type {
+  text-decoration:underline;
+}
+ul > li:first-of-type {
+  text-decoration:underline;
+}
+
 .thumb {
   height: 200px;
   width: 90%;
@@ -249,7 +260,7 @@ color:white;
   color:red;
   }
 
-/* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (max-width: 768px) {
   .positioning-container #ele2 {
     position: relative;
@@ -284,4 +295,20 @@ color:white;
     #hiddenextra {
       display:inline;
     }
+}
+label[for="lname"], label[for="fname"] {
+  font-size: 18px;
+}
+input + label {
+  font-size: 18px;
+}
+legend {
+  font-size: 22px;
+}
+input[type="submit"] {
+  font-weight:bold;
+}
+.dropcap {
+  font-size: 300%;
+
 }
