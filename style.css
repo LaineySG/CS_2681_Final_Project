@@ -232,9 +232,11 @@ padding-top:40px;
 }
 .floating-element.left {
   float: left;
+  box-shadow: 6px 6px 6px rgb(202, 137, 39);
 }
 .floating-element.right {
   float:right;
+  box-shadow: 6px 6px 6px rgb(202, 137, 39);
 }
 dl {
   margin: 0px;
@@ -311,4 +313,10 @@ input[type="submit"] {
 .dropcap {
   font-size: 300%;
 
+}
+footer > p {
+  text-shadow: 3px 3px black;
+}
+#refreshertitle {
+  transform: rotate(-3deg);
 }
