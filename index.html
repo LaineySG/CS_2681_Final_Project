@@ -19,6 +19,10 @@ make sure to include JS, form validation, references page, stylesheets for respo
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color:#0d4a65">
+    <audio controls id="audioex">
+        <source src="Preludes, Op. 28 - No. 10 'The night moth'.mp3" type="audio/mpeg">
+        Your browser doesn't support this audio element.
+    </audio>
     <h1 id="titleheader">Baratt's Home Page</h1>
     <nav id = "menubar">
         <div class="menubar" id="ex1"><a href="#">Home</a></div>
@@ -42,27 +46,28 @@ make sure to include JS, form validation, references page, stylesheets for respo
             <div class="candiesdesc"><span class="dropcap">M</span>auris vitae vestibulum metus. Nulla vestibulum nisi a augue cursus, id laoreet lorem scelerisque.</div>
         </div>
     </div>
-
-    <figure>
+    <div id="eventtimer"><p id="eventtimertext">test</p></div>
+<div id="figdiv">
+    <figure id="mainquotefig">
         <blockquote id="mainquote">
             <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae vestibulum metus. Nulla vestibulum nisi a augue cursus, id laoreet lorem scelerisque. Aliquam in sodales sem. Nullam id cursus eros.&rdquo;</p>
         </blockquote>
-        <figcaption>—A Satisfied Customer</figcaption>
+        <figcaption id="mainquotecaption">—A Satisfied Customer</figcaption>
     </figure>
-
-    <form action="contact_us.php" id="contactusform"> <!--Doesnt exist as we haven't covered PHP yet.-->
+</div>
+    <form action="" id="contactusform"> <!--action doesnt exist as we haven't covered PHP yet.-->
         <fieldset>
             <legend><b>Contact us!</b></legend>
         <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="Enter First Name"><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter First Name" required><br>
         <label for="lname" id="ex8">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Enter Last Name"><br><br>
-        <input type="radio" name="radiooptions" value="Yes" id="yes">
+        <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required><br><br>
+        <input type="radio" name="radiooptions" value="Yes" id="yes" required>
         <label for="yes" id="ex9span">I have purchased a Barratt's product before.</label><br>
-        <input type="radio" name="radiooptions" value="No" id="no">
+        <input type="radio" name="radiooptions" value="No" id="no" required>
         <label for="no">I have not purchased a Barratt's product before.</label><br>
-        <textarea>Enter the content of your message here!</textarea><br>
-        <input id = "submitbutton" type="submit" value="Submit">
+        <textarea placeholder="Enter message content here!" required></textarea><br>
+        <input id ="submitbutton" action="" onclick="testFunction()" type="submit" value="Submit">
     </fieldset>
       </form> 
 
@@ -72,4 +77,5 @@ make sure to include JS, form validation, references page, stylesheets for respo
 <li>Add Contact us button</li></ul><p id="ex7">Website was last edited 12/25/22</p></footer>
 
 </body>
+<script src="scripts.js"></script>
 </html>
