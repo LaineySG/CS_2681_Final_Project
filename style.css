@@ -59,13 +59,13 @@ h2 {
     width: 80%;
 }
 #mainquotefig {
-  height: 130px;
+  height: 175px;
   transition: height 3s;
   width: 100%;
   font-size:2em;
 }
 #mainquotefig:hover {
-  height: 195px;
+  height: 240px;
 }
 #mainquote > p {
   font-size: 1em;
@@ -93,10 +93,10 @@ figcaption {
   margin:auto;
   margin-top: 30px;
 }
-#menubar {
+#menubar, #mobilemenubar {
   display:flex;
 }
-.menubar {
+.menubar, .mobilemenubar {
   flex: 1 1 0;
   background-color:#9dc307;
   height: 50px;
@@ -179,6 +179,9 @@ footer {
   padding-top: 30px;
   font-size: 1.3em;
 
+}
+#mobilemenubar {
+  display:none;
 }
 .grid-container {
   display: grid;
@@ -339,6 +342,10 @@ video {
 figure {
   float:right;
 }
+#figdiv {
+  width: 80%;
+  padding-left:15px;
+}
 figcaption, figcaption > a {
   font-size: 0.875em;
   color:black;
@@ -368,7 +375,6 @@ audio::-webkit-media-controls-panel {
 
 #eventtimer {
   color: white;
-  height: 150px;
   text-align: center;
   padding-top: 30px;
   font-size: 1.3em;
@@ -382,14 +388,24 @@ audio::-webkit-media-controls-panel {
 @media only screen and (max-width: 768px) {
   .positioning-container #ele2 {
     position: relative;
-    left:150px;
+    left:50px;
+  }
+  #candies {
+    flex-direction: column;
   }
   .grid-container {
     grid-template-columns: 33% 33% 33%;
   }
+  .grid-item {
+    height: 300px;
+  }
   .positioning-container #ele4 {
     position: relative;
-    left: 100px;
+    left: 25px;
+  }
+  .positioning-container #ele1 {
+    left: -150px;
+    top: -50px;
   }
   .floating-element.vid {
     width: 90%;
@@ -399,16 +415,16 @@ audio::-webkit-media-controls-panel {
     float:left;
   }
   #mainquotefig {
-    height: 230px;
+    height: 350px;
     transition: height 3s;
     width: 100%;
     font-size:2em;
   }
   #mainquotefig:hover {
-    height: 350px;
+    height: 600px;
   }
   .thumb {
-    height: 100px;
+    height: 200px;
     width: 90%;
     max-width: 400px;
     border-radius: 50px;
@@ -420,11 +436,20 @@ audio::-webkit-media-controls-panel {
     position:initial;
     width:100%
   }
+  #mobilemenubar {
+    display:block;
+  }
   .grid-item {
     font-size: 1em;
   }
   .floating-container{
-    height: 1300px;
+    height: 1550px;
+  }
+  .floating-element {
+    height: auto;
+  }
+  .menubar {
+    display:none;
   }
 }
 
