@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/180898bed9.js" crossorigin="anonymous"></script> <!--Font Awesome used for the navicon.-->
     <title>Refreshers</title>
 </head>
 <body style="background-color: #1cdd50;">
@@ -16,7 +17,16 @@
         <div class="menubar" style="background-color:#084cc2"><a href="fruitsalad.html">Fruit Salad</a></div>
         <div class="menubar" style="background-color:#084cc2"><a href="crossref.html">Cross-Reference</a></div>
     </nav>
-
+    <nav id = "mobilemenubar">
+        <div class="mobilemenubar header" onclick="menuControl()"><i class="fa fa-thin fa-bars" style="font-size: 36px;"></i></div>
+        <div id="mobilemenubarlinks">
+        <div class="mobilemenubar link"><a href="index.html">Home</a></div>
+        <div class="mobilemenubar link"><a href="refreshers.html">Refreshers</a></div>
+        <div class="mobilemenubar link"><a href="blackjacks.html">Black Jacks</a></div>
+        <div class="mobilemenubar link"><a href="fruitsalad.html">Fruit Salad</a></div>
+        <div class="mobilemenubar link"><a href="crossref.html">Cross-Reference</a></div>
+        </div>
+    </nav>
     <div class="positioning-container" style="background-color:#fdf002;">
         <div class="positioning-element" id="ele1"><p id="hiddenextra">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae vestibulum metus. Nulla vestibulum nisi a augue cursus, id laoreet lorem scelerisque. Aliquam in sodales sem. Nullam id cursus eros.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae vestibulum metus. Nulla vestibulum nisi a augue cursus, id laoreet lorem scelerisque. Aliquam in sodales sem. Nullam id cursus eros.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae vestibulum metus. Nulla vestibulum nisi a augue cursus, id laoreet lorem scelerisque. Aliquam in sodales sem. Nullam id cursus eros.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae vestibulum metus. Nulla vestibulum nisi a augue cursus, id laoreet lorem scelerisque. Aliquam in sodales sem. Nullam id cursus eros.</p></div> 
         <div class="positioning-element"  id="ele2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae vestibulum metus. Nulla vestibulum nisi a augue cursus, id laoreet lorem scelerisque. Aliquam in sodales sem. Nullam id cursus eros.</div>
@@ -31,4 +41,5 @@
         
 
 </body>
+<script src="scripts.js"></script>
 </html>

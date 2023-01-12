@@ -439,6 +439,10 @@ audio::-webkit-media-controls-panel {
   #mobilemenubar {
     display:block;
   }
+  .mobilemenubar.header {
+    display:block;
+    text-align: center;
+  }
   .grid-item {
     font-size: 1em;
   }
@@ -450,6 +454,9 @@ audio::-webkit-media-controls-panel {
   }
   .menubar {
     display:none;
+  }
+  #hero-image {
+    margin-top: 5px;
   }
 }
 

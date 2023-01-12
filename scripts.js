@@ -15,8 +15,7 @@ function eventCountdown () {
     const mspersec = 1000;
     let result = ""; 
     const monthnames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; 
-    const weekdaynames = ["Sunday", "Monday", "Tuesday", 'Wddnesday', "Thursday", "Friday", "saturday"];
-    result = weekdaynames[currentdate.getDay()] + " " + monthnames[currentdate.getMonth()+1] + " " + currentdate.getDate() + " " + currentdate.getFullYear() + "," + currentdate.getHours() + ": " + currentdate.getMinutes() + ":" + currentdate.getSeconds();
+    const weekdaynames = ["Sunday", "Monday", "Tuesday", 'Wednesday', "Thursday", "Friday", "saturday"];
     datediff = new Date(Math.abs(eventdate - currentdate));
     //result = Math.ceil(result / msperday);
     // result is currently in MS
@@ -37,3 +36,12 @@ function eventCountdown () {
     }
  }
 document.getElementById("eventtimertext").innerHTML = eventCountdown(); 
+
+function menuControl() {
+    links = document.getElementById("mobilemenubarlinks")
+    if (links.style.display == "none") {
+        links.style.display = "block";
+    } else {
+        links.style.display = "none";
+    }
+}
