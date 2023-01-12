@@ -355,7 +355,6 @@ audio::-webkit-media-controls-panel {
 }
 
 #eventtimer {
-  border: 2px solid red;
   color: white;
   height: 150px;
   text-align: center;

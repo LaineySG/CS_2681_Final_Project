@@ -20,16 +20,20 @@ function eventCountdown () {
     datediff = new Date(Math.abs(eventdate - currentdate));
     //result = Math.ceil(result / msperday);
     // result is currently in MS
-
     //round or whatever
-    days = parseInt(datediff / msperday);
-    datediff = datediff % msperday;
-    hours = parseInt(datediff / msperhour);
-    datediff = datediff % msperhour;
-    mins = parseInt(datediff / mspermin);
-    datediff = datediff % mspermin; // gives # of mins different
-    seconds = parseInt(datediff / mspersec);
-    result = days + " days, " + hours + " hours, " + mins + " mins, and " + seconds + " seconds until the event!";
-    return result;
+    if (eventdate != currentdate && eventdate > currentdate) {
+        days = parseInt(datediff / msperday);
+        datediff = datediff % msperday;
+        hours = parseInt(datediff / msperhour);
+        datediff = datediff % msperhour;
+        mins = parseInt(datediff / mspermin);
+        datediff = datediff % mspermin; // gives # of mins different
+        seconds = parseInt(datediff / mspersec);
+        result = days + " days, " + hours + " hours, " + mins + " mins, and " + seconds + " seconds until the event!";
+        return result;
+    } else {
+        result = (datediff < msperday) ? "This event is currently happening!" : "This event has passed!"; // conditional operator
+        return result;
+    }
  }
 document.getElementById("eventtimertext").innerHTML = eventCountdown(); 
